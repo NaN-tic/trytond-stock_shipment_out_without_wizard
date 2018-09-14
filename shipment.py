@@ -4,11 +4,11 @@ from trytond.model import ModelView
 from trytond.pool import PoolMeta
 
 __all__ = ['ShipmentOut']
-__metaclass__ = PoolMeta
 
 
 class ShipmentOut:
     __name__ = 'stock.shipment.out'
+    __metaclass__ = PoolMeta
 
     @classmethod
     def __setup__(cls):

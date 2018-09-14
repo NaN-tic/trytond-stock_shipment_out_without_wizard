@@ -9,5 +9,15 @@
         <field name="inherit" ref="stock.shipment_out_view_form"/>
     </record>
 
+    <record model="ir.model.button" id="assign_try_button">
+        <field name="name">assign_try_button</field>
+        <field name="string">Assign</field>
+        <field name="model" search="[('model', '=', 'stock.shipment.out')]"/>
+    </record>
+    <record model="ir.model.button-res.group"
+        id="stock_assign_button_group">
+        <field name="button" ref="assign_try_button"/>
+        <field name="group" ref="stock.group_stock"/>
+    </record>
 </data>
 </tryton>
