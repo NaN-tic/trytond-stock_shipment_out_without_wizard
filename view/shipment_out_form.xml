@@ -4,6 +4,6 @@
 <data>
       <xpath expr="/form/group[@id='state_buttons']/group[@id='buttons']/button[@name='assign_wizard']"
             position="replace">
-        <button string="Assign" name="assign_try_button" icon="tryton-go-next"/>
+        <button string="Assign" name="assign_try_button" icon="tryton-forward"/>
     </xpath>
 </data>
