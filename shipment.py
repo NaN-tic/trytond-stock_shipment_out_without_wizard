@@ -12,7 +12,8 @@ class ShipmentOut(metaclass=PoolMeta):
     @classmethod
     def __setup__(cls):
         super(ShipmentOut, cls).__setup__()
-        assign_wizard = cls._buttons['assign_wizard']
+        assign_wizard = cls._buttons['assign_wizard'].copy()
+        assign_wizard['icon'] = 'tryton-forward'
         cls._buttons.update({
                 'assign_wizard': {
                     'invisible': True,
