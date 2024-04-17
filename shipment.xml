@@ -12,7 +12,7 @@
     <record model="ir.model.button" id="assign_try_button">
         <field name="name">assign_try_button</field>
         <field name="string">Assign</field>
-        <field name="model" search="[('model', '=', 'stock.shipment.out')]"/>
+        <field name="model">stock.shipment.out</field>
     </record>
     <record model="ir.model.button-res.group"
         id="stock_assign_button_group">
